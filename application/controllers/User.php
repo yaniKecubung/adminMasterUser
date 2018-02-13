@@ -32,10 +32,19 @@ class User extends CI_Controller
 		}
 
 	}
-	
+	// show datatable
 	public function show(){
 		$data['dataAdmin'] = $this->M_user->select_all_admin(); 
 		$this->load->view('myView/list_data',$data);
+	}
+	
+	public function update(){
+		$id = trim($_POST['id']);
+		// $datax['userdata'] = $this->userdata;
+		$datax['dataAdmin'] = $this->M_user->get_by_id($id);
+		
+		
+		echo show_my_modal('modal/update_admin_modal', 'update-admin', $data);
 	}
 	
 	

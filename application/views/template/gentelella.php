@@ -30,8 +30,7 @@
 			<!-- Custom Theme Style -->
 		<link href="<?php echo base_url('assets/css/custom.min.css') ?>" rel="stylesheet">
 		<!-- /Import CSS -->
-		<!-- My Ajax -->
-		<?php include './assets/js/ajax.php'; ?>
+
 	</head>
 	<body class="nav-md">
 		<div class="container body">
@@ -128,6 +127,8 @@
 		<script src="<?php echo base_url('vendors/pdfmake/build/vfs_fonts.js') ?>"></script>
 			<!-- Custom JS -->
 		<script src="<?php echo base_url('assets/js/custom.js') ?>"></script>
+				<!-- My Ajax -->
+		<?php include './assets/js/ajax.php'; ?>
 		<!-- /Import Javascript -->
 	</body>
 </html>
