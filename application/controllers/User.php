@@ -40,13 +40,24 @@ class User extends CI_Controller
 	
 	public function update(){
 		$id = trim($_POST['id']);
-		// $datax['userdata'] = $this->userdata;
+		
 		$datax['dataAdmin'] = $this->M_user->get_by_id($id);
 		
 		
-		echo show_my_modal('modal/update_admin_modal', 'update-admin', $data);
+		echo show_my_modal('modal/update_admin_modal', 'update-admin', $datax);
 	}
 	
+	public function delete(){
+		$id = trim($_POST['id']);
+		//echo $id; die();
+		$result = $this->M_user->delete($id);
+		
+		if ($result > 0) {
+			echo show_succ_msg('Data User Berhasil dihapus', '20px');
+		} else {
+			echo show_err_msg('Data User Gagal dihapus', '20px');
+		}
+	}
 	
 	
 		

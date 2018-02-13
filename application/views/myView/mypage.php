@@ -37,8 +37,11 @@
 		  </tbody>
 		</table>
 		
-		<div id="tempat-modal"></div>
+		
 
 	  </div>
 	</div>
 </div>
+<div id="tempat-modal"></div>
+
+<?php show_my_confirm('konfirmasiHapus', 'hapus-dataPegawai', 'Hapus Data Ini?', 'Ya, Hapus Data Ini'); ?>

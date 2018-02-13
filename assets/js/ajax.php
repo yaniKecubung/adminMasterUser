@@ -21,6 +21,11 @@
 	function refresh() {
 		MyTable = $('#list-data').dataTable();
 	}
+	function effect_msg() {
+		// $('.msg').hide();
+		$('.msg').show(1000);
+		setTimeout(function() { $('.msg').fadeOut(1000); }, 3000);
+	}
 	
 
 	//-- datatable setting
@@ -47,7 +52,27 @@
 		.done(function(data) {
 			$('#tempat-modal').html(data);
 			$('#update-admin').modal('show');
+			
 		})
 		
+	});
+	var id_user;
+	$(document).on("click",".konfirmasiHapus-Admin",function(){
+		//alert();
+		id_user = $(this).attr("data-id");
+		//alert(id_user);
+	});
+	$(document).on("click", ".hapus-dataPegawai", function() {
+		var id = id_user;
+
+		$.ajax({
+			method : "POST",
+			url : "<?php echo base_url('User/delete');?>",
+			data : "id=" +id
+		}).done(function(data){
+			$('#konfirmasiHapus').modal('hide');
+			tampilAdmin();
+			effect_msg();
+		})
 	});
 </script>

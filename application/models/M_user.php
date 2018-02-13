@@ -16,5 +16,13 @@ class M_user extends CI_Model {
         return $query->row();
 	}
 	
+	public function delete($id){
+		$sql = "DELETE FROM admin WHERE id='" .$id ."'";
+
+		$this->db->query($sql);
+
+		return $this->db->affected_rows();		
+	}
+	
 	
 }
