@@ -30,6 +30,8 @@
 			<!-- Custom Theme Style -->
 		<link href="<?php echo base_url('assets/css/custom.min.css') ?>" rel="stylesheet">
 		<!-- /Import CSS -->
+		<!-- My Ajax -->
+		<?php include './assets/js/ajax.php'; ?>
 	</head>
 	<body class="nav-md">
 		<div class="container body">

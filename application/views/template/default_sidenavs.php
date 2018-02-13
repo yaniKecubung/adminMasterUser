@@ -27,6 +27,7 @@
 							<!--<li><a href="<?php echo base_url('example/simple_template') ?>">Simple Template</a></li>-->
 							<li><a href="<?php echo base_url('Home/index') ?>">Page Example</a></li>
 							<li><a href="<?php echo base_url('Home/dashboard') ?>">Dashboard</a></li>
+							<li><a href="<?php echo base_url('User/index') ?>">User Page</a></li>
 						</ul>
 					</li>
 					<li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>

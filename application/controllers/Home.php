@@ -61,4 +61,9 @@ class Home extends CI_Controller
 		$this->template->render();
 
 	}
+	
+	public function logout() {
+		$this->session->sess_destroy();
+		redirect('Auth');
+	}	
 }

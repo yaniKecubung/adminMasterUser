@@ -13,7 +13,7 @@
 							<span>Settings</span></a>
 						</li>
 						<li><a href="javascript:;">Help</a></li>
-						<li><a href="Auth/logout"><i class="fa fa-sign-out pull-right"></i>Logout</a></li>
+						<li><a href="Home/logout"><i class="fa fa-sign-out pull-right"></i>Logout</a></li>
 					</ul>
 				</li>
 			</ul>
